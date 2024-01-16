@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F73FF3C-C51E-45C8-AB68-80C74FA42912}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WinForm.Rooster.Lottery</RootNamespace>
+    <AssemblyName>WinForm.Rooster.Lottery</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BetDetailViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BetDetailViewForm.Designer.cs">
+      <DependentUpon>BetDetailViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LotteryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LotteryForm.Designer.cs">
+      <DependentUpon>LotteryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ApiResponse.cs" />
+    <Compile Include="Model\Bet.cs" />
+    <Compile Include="BetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BetForm.Designer.cs">
+      <DependentUpon>BetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BetPlayerInfo.cs" />
+    <Compile Include="Model\DTOs\BetDTO.cs" />
+    <Compile Include="Model\DTOs\PlayerDTO.cs" />
+    <Compile Include="Model\DTOs\LotteryApiResponseDTO.cs" />
+    <Compile Include="Model\LotteryResult.cs" />
+    <Compile Include="Model\Player.cs" />
+    <Compile Include="Resgiter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Resgiter.Designer.cs">
+      <DependentUpon>Resgiter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BetDetailViewForm.resx">
+      <DependentUpon>BetDetailViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BetForm.resx">
+      <DependentUpon>BetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LotteryForm.resx">
+      <DependentUpon>LotteryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resgiter.resx">
+      <DependentUpon>Resgiter.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

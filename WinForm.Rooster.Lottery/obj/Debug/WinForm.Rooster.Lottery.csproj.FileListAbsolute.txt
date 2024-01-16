@@ -1,0 +1,15 @@
+E:\Rooster.Lottery\WinForm.Rooster.Lottery\obj\Debug\WinForm.Rooster.Lottery.csproj.AssemblyReference.cache
+E:\Rooster.Lottery\WinForm.Rooster.Lottery\obj\Debug\WinForm.Rooster.Lottery.csproj.GenerateResource.cache
+E:\Rooster.Lottery\WinForm.Rooster.Lottery\obj\Debug\WinForm.Rooster.Lottery.csproj.CoreCompileInputs.cache
+E:\Rooster.Lottery\WinForm.Rooster.Lottery\bin\Debug\WinForm.Rooster.Lottery.dll
+E:\Rooster.Lottery\WinForm.Rooster.Lottery\bin\Debug\WinForm.Rooster.Lottery.pdb
+E:\Rooster.Lottery\WinForm.Rooster.Lottery\bin\Debug\Newtonsoft.Json.dll
+E:\Rooster.Lottery\WinForm.Rooster.Lottery\bin\Debug\Newtonsoft.Json.xml
+E:\Rooster.Lottery\WinForm.Rooster.Lottery\obj\Debug\WinForm.Rooster.Lottery.csproj.CopyComplete
+E:\Rooster.Lottery\WinForm.Rooster.Lottery\obj\Debug\WinForm.Rooster.Lottery.dll
+E:\Rooster.Lottery\WinForm.Rooster.Lottery\obj\Debug\WinForm.Rooster.Lottery.pdb
+E:\Rooster.Lottery\WinForm.Rooster.Lottery\obj\Debug\WinForm.Rooster.Lottery.LoginForm.resources
+E:\Rooster.Lottery\WinForm.Rooster.Lottery\obj\Debug\WinForm.Rooster.Lottery.BetForm.resources
+E:\Rooster.Lottery\WinForm.Rooster.Lottery\obj\Debug\WinForm.Rooster.Lottery.BetDetailViewForm.resources
+E:\Rooster.Lottery\WinForm.Rooster.Lottery\obj\Debug\WinForm.Rooster.Lottery.LotteryForm.resources
+E:\Rooster.Lottery\WinForm.Rooster.Lottery\obj\Debug\WinForm.Rooster.Lottery.Resgiter.resources
